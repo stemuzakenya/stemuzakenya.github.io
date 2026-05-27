@@ -46,6 +46,26 @@ margin-left:20px;
 text-decoration:none;
 font-weight:500;
 }
+.cta-buttons{
+    display:flex;
+    gap:12px;
+    margin-top:15px;
+}
+
+/* Mobile fix */
+@media (max-width:768px){
+    .cta-buttons{
+        flex-direction:column;
+        width:100%;
+    }
+
+    .cta-buttons .btn{
+        width:100%;
+        text-align:center;
+        padding:14px 18px;
+        font-size:16px;
+    }
+}
 
 /* HAMBURGER */
 .menu-toggle{
@@ -249,19 +269,21 @@ document.getElementById("navMenu").classList.toggle("active");
             to make STEM education simple, practical, and scalable for any school.
         </p>
 
-        <br></br>
-            <a href="https://wa.me/254727048251?text=Hello%20STEMUZA%20Team%2C%20I%20would%20like%20to%20contact%20you%20regarding%20STEM%20implementation%20for%20our%20school"
-               class="btn btn-secondary"
-               target="_blank"
-               rel="noopener noreferrer">
-              Contact Our Team
-            </a>
-        <a href="assets/brochure/stemuzakenya-brochure.pdf"
-           class="btn btn-secondary"
-           onclick="console.log('Brochure downloaded')"
-           download>
-          Download Brochure
-        </a>
+       <div class="cta-buttons">
+
+  <a href="https://wa.me/254727048251?text=Hello%20STEMUZA%20Team%2C%20I%20want%20a%20consultation"
+     class="btn btn-primary"
+     target="_blank">
+    Contact Our Team
+  </a>
+
+  <a href="assets/brochure/stemuzakenya-brochure.pdf"
+     class="btn btn-secondary"
+     download>
+    Download Brochure
+  </a>
+
+</div>
     </div>
 
 </section>
