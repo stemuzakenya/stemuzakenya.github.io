@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>STEMUZA | Smart STEM Learning Solution</title>
+<meta name="description" content="STEMUZA provides Smart STEM Mobile Kits, Robotics, Programming, IoT Sensors, and AI Learning Solutions for CBC, British Curriculum, and Cambridge Pathway schools.">
+<meta name="keywords" content="STEM education Kenya, robotics for schools, coding for schools, STEM kits, CBC STEM solution, Cambridge STEM, British curriculum STEM">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+}
+
+body{
+line-height:1.6;
+color:#1a1a1a;
+}
+
+/* HEADER */
+header{
+background:#0b1f3a;
+color:white;
+padding:20px 10%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:relative;
+}
+
+/* NAV (DESKTOP) */
+nav{
+display:flex;
+}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-weight:500;
+}
+
+/* HAMBURGER ICON */
+.menu-toggle{
+display:none;
+font-size:28px;
+cursor:pointer;
+}
+
+/* HERO */
+.hero{
+display:grid;
+grid-template-columns:1fr 1fr;
+align-items:center;
+padding:80px 10%;
+background:linear-gradient(to right,#0b1f3a,#1d4ed8);
+color:white;
+gap:40px;
+}
+
+.hero img{
+width:100%;
+border-radius:10px;
+}
+
+.hero h1{
+font-size:42px;
+margin-bottom:20px;
+}
+
+.btn{
+padding:12px 24px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+margin:5px;
+font-weight:600;
+}
+
+.btn-primary{
+background:#2563eb;
+color:white;
+}
+
+.btn-secondary{
+background:white;
+color:#0b1f3a;
+}
+
+section{
+padding:60px 10%;
+}
+
+h2{
+margin-bottom:20px;
+font-size:32px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:#f5f7fa;
+padding:25px;
+border-radius:10px;
+text-align:center;
+}
+
+.card img{
+width:55px;
+margin-bottom:15px;
+}
+
+.feature-image{
+width:100%;
+border-radius:10px;
+margin-top:20px;
+}
+
+.cta{
+background:#1d4ed8;
+color:white;
+text-align:center;
+padding:70px 10%;
+}
+
+footer{
+background:#0b1f3a;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+ul{
+padding-left:20px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+.hero{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+/* show hamburger */
+.menu-toggle{
+display:block;
+}
+
+/* mobile menu */
+nav{
+display:none;
+flex-direction:column;
+background:#0b1f3a;
+position:absolute;
+top:70px;
+right:10%;
+width:200px;
+padding:15px;
+border-radius:8px;
+z-index:999;
+}
+
+nav a{
+margin:10px 0;
+}
+
+nav.active{
+display:flex;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>STEMUZA</h2>
+
+<!-- HAMBURGER -->
+<div class="menu-toggle" onclick="toggleMenu()">
+☰
+</div>
+
+<nav id="navMenu">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="solutions.html">Solutions</a>
+<a href="schools.html">Schools</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<script>
+function toggleMenu(){
+document.getElementById("navMenu").classList.toggle("active");
+}
+</script>
+
+<!-- HERO -->
+<section class="hero">
+
+<div>
+<h1>Future-Ready STEM Learning for Schools</h1>
+
+<p>
+CBC Aligned | British Curriculum | Cambridge Pathway Ready
+</p>
+
+<p>
+Smart STEM Mobile Kits, Robotics, Programming, IoT Sensors,
+Artificial Intelligence and Innovation Learning for modern schools.
+</p>
+
+<button class="btn btn-primary">Book a Demo</button>
+<button class="btn btn-secondary">Request Proposal</button>
+</div>
+
+<img src="assets/img/temlab.png" alt="students learning robotics and STEM in school">
+
+</section>
+
+<!-- INTRO -->
+<section>
+
+<h2>Transform Classrooms Into Innovation Labs</h2>
+
+<p>
+STEMUZA helps schools deliver practical STEM education using smart
+mobile lab kits, teacher guides, student workbooks, coding platforms,
+robotics systems, IoT sensors and AI learning tools.
+</p>
+
+<img class="feature-image" src="assets/img/stem-overview.png" alt="STEM education learning platform overview">
+
+</section>
+
+<!-- SOLUTIONS -->
+<section>
+
+<h2>Our Core Learning Solutions</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://cdn-icons-png.flaticon.com/512/1048/1048953.png" alt="">
+<h3>Programming & Coding</h3>
+<p>Python, Scratch, Arduino, MicroPython and beginner software development.</p>
+</div>
+
+<div class="card">
+<img src="https://cdn-icons-png.flaticon.com/512/1995/1995574.png" alt="">
+<h3>Robotics</h3>
+<p>Hands-on robotics projects for automation, control and innovation learning.</p>
+</div>
+
+<div class="card">
+<img src="https://cdn-icons-png.flaticon.com/512/4149/4149675.png" alt="">
+<h3>IoT Sensors</h3>
+<p>Environmental monitoring, agriculture systems and smart automation projects.</p>
+</div>
+
+<div class="card">
+<img src="https://cdn-icons-png.flaticon.com/512/2103/2103633.png" alt="">
+<h3>AI Basics</h3>
+<p>Artificial intelligence foundations, machine learning concepts and smart systems.</p>
+</div>
+
+<div class="card">
+<img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="">
+<h3>Virtual Labs & Analytics</h3>
+<p>Interactive STEM simulations, learner assessments, progress analytics, and student innovation portfolios for continuous performance tracking.</p>
+</div>
+
+<div class="card">
+<img src="https://cdn-icons-png.flaticon.com/512/2995/2995620.png" alt="">
+<h3>Teacher & Student Training</h3>
+<p>TLA teacher guides, student workbooks, project manual guides, practical lesson plans, and assessment rubrics for complete STEM implementation.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- BENEFITS -->
+<section>
+
+<h2>Why Parents and Schools Love STEMUZA</h2>
+
+<ul>
+<li>✔ Practical learning instead of theory only</li>
+<li>✔ Better learner engagement and confidence</li>
+<li>✔ Future-ready skills for global careers</li>
+<li>✔ Supports CBC and Cambridge pathways</li>
+<li>✔ Affordable implementation for schools</li>
+</ul>
+
+</section>
+
+<!-- CTA -->
+<section class="cta">
+
+<h2>Build the Next Generation of Innovators</h2>
+
+<p>
+Bring coding, robotics, IoT and AI into your classrooms with STEMUZA.
+</p>
+
+<button class="btn btn-primary">Schedule a Free Demo</button>
+
+</section>
+
+<footer>
+<p>© 2026 STEMUZA | Smart STEM Learning Solution</p>
+</footer>
+
+</body>
+</html>

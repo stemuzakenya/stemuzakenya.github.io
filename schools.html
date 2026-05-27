@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>STEMUZA for Schools | Smart STEM Learning System</title>
+<meta name="description" content="STEMUZA empowers schools with STEM kits, robotics labs, AI learning, IoT systems, and teacher training for CBC, British, and Cambridge curricula.">
+<meta name="keywords" content="STEMUZA schools, STEM education Kenya, robotics labs schools, CBC STEM kits, AI learning schools, IoT school systems">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+}
+
+body{
+line-height:1.6;
+color:#1a1a1a;
+}
+
+/* HEADER */
+header{
+background:#0b1f3a;
+color:white;
+padding:20px 10%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:relative;
+}
+
+/* NAV (DESKTOP) */
+nav{
+display:flex;
+}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-weight:500;
+}
+
+/* HAMBURGER */
+.menu-toggle{
+display:none;
+font-size:28px;
+cursor:pointer;
+}
+
+/* HERO */
+.hero{
+display:grid;
+grid-template-columns:1fr 1fr;
+align-items:center;
+padding:80px 10%;
+background:linear-gradient(to right,#0b1f3a,#1d4ed8);
+color:white;
+gap:40px;
+}
+
+.hero img{
+width:100%;
+border-radius:10px;
+}
+
+.hero h1{
+font-size:42px;
+margin-bottom:20px;
+}
+
+.btn{
+padding:12px 24px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+margin:5px;
+font-weight:600;
+}
+
+.btn-primary{
+background:#2563eb;
+color:white;
+}
+
+.btn-secondary{
+background:white;
+color:#0b1f3a;
+}
+
+section{
+padding:60px 10%;
+}
+
+h2{
+margin-bottom:20px;
+font-size:32px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:#f5f7fa;
+padding:25px;
+border-radius:10px;
+text-align:center;
+}
+
+.card img{
+width:55px;
+margin-bottom:15px;
+}
+
+.cta{
+background:#1d4ed8;
+color:white;
+text-align:center;
+padding:70px 10%;
+}
+
+footer{
+background:#0b1f3a;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+ul{
+padding-left:20px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+.hero{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+/* show hamburger */
+.menu-toggle{
+display:block;
+}
+
+/* mobile menu */
+nav{
+display:none;
+flex-direction:column;
+background:#0b1f3a;
+position:absolute;
+top:70px;
+right:10%;
+width:200px;
+padding:15px;
+border-radius:8px;
+z-index:999;
+}
+
+nav a{
+margin:10px 0;
+}
+
+nav.active{
+display:flex;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>STEMUZA</h2>
+
+<!-- HAMBURGER -->
+<div class="menu-toggle" onclick="toggleMenu()">
+☰
+</div>
+
+<nav id="navMenu">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="solutions.html">Solutions</a>
+<a href="schools.html">Schools</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<script>
+function toggleMenu(){
+document.getElementById("navMenu").classList.toggle("active");
+}
+</script>
+
+<!-- HERO -->
+<section class="hero">
+
+<div>
+<h1>STEMUZA for Schools</h1>
+
+<p>
+Empowering Schools to Become Innovation and STEM Excellence Centers
+</p>
+
+<p>
+    We provide complete, ready-to-implement STEM solutions aligned with CBC, British (Primary, Junior, and Senior School), and Cambridge (Primary, Lower Secondary, Senior School, IGCSE, and A Level) curricula. 
+    Our offering includes hardware, software, curriculum content, teacher training, and continuous support. 
+    Our goal is to make STEM education simple, practical, and scalable for any school.
+</p>
+
+<button class="btn btn-primary">Partner With Us</button>
+<button class="btn btn-secondary">Request School Visit</button>
+</div>
+
+<img src="assets/img/smart-project.png" alt="STEMUZA STEM classroom schools robotics coding IoT">
+
+</section>
+
+<!-- WHY SCHOOLS CHOOSE STEMUZA -->
+<section>
+
+<h2>Why Schools Choose STEMUZA</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Curriculum Aligned</h3>
+<p>
+Supports CBC, British Curriculum, and Cambridge STEM frameworks with structured learning pathways.
+</p>
+</div>
+
+<div class="card">
+<h3>Hands-On Learning</h3>
+<p>
+Students learn by building, experimenting, and solving real-world problems using modern STEM tools.
+</p>
+</div>
+
+<div class="card">
+<h3>Teacher Empowerment</h3>
+<p>
+We train teachers to confidently deliver robotics, coding, IoT, and AI lessons.
+</p>
+</div>
+
+<div class="card">
+<h3>Affordable Scalability</h3>
+<p>
+Flexible packages that grow with your school’s STEM adoption journey.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- SCHOOL PACKAGES -->
+<section>
+
+<h2>School Implementation Packages</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Starter Package</h3>
+<p>
+Ideal for beginner STEM adoption.<br>
+✔ Basic robotics kits<br>
+✔ Intro coding modules<br>
+✔ Teacher orientation
+</p>
+</div>
+
+<div class="card">
+<h3>Standard Package</h3>
+<p>
+For growing STEM programs.<br>
+✔ Robotics & IoT kits<br>
+✔ Structured STEM curriculum<br>
+✔ Teacher training workshops
+</p>
+</div>
+
+<div class="card">
+<h3>Advanced Package</h3>
+<p>
+For innovation-focused schools.<br>
+✔ AI & IoT labs<br>
+✔ Virtual STEM simulations<br>
+✔ Innovation project support
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- IMPLEMENTATION PROCESS -->
+<section>
+
+<h2>How We Work With Schools</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Step 1: Consultation</h3>
+<p>
+We assess your school’s needs and STEM readiness.
+</p>
+</div>
+
+<div class="card">
+<h3>Step 2: Setup</h3>
+<p>
+We deploy STEM kits, labs, and digital learning tools.
+</p>
+</div>
+
+<div class="card">
+<h3>Step 3: Training</h3>
+<p>
+Teachers receive hands-on practical training and guides.
+</p>
+</div>
+
+<div class="card">
+<h3>Step 4: Implementation</h3>
+<p>
+Students begin real STEM projects and innovation challenges.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- IMPACT -->
+<section>
+
+<h2>Impact in Partner Schools</h2>
+
+<ul>
+<li>✔ Increased student participation in science and technology</li>
+<li>✔ Improved performance in STEM subjects</li>
+<li>✔ Development of innovation and problem-solving culture</li>
+<li>✔ Schools become regional STEM innovation hubs</li>
+<li>✔ Students gain future-ready digital and technical skills</li>
+</ul>
+
+</section>
+
+<!-- CTA -->
+<section class="cta">
+
+<h2>Transform Your School Today</h2>
+
+<p>
+Join forward-thinking schools using STEMUZA to build future innovators and problem solvers.
+</p>
+
+<button class="btn btn-primary">Schedule School Visit</button>
+
+</section>
+
+<footer>
+<p>© 2026 STEMUZA | Smart STEM Learning Solution</p>
+</footer>
+
+</body>
+</html>

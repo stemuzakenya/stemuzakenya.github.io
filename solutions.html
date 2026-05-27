@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>STEMUZA Solutions | Smart STEM Learning System</title>
+<meta name="description" content="Explore STEMUZA solutions including STEM kits, robotics labs, IoT systems, AI learning, teacher training, and virtual labs for schools.">
+<meta name="keywords" content="STEM solutions, robotics kits schools, IoT education, AI learning schools, CBC STEM kits, Cambridge STEM labs">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+}
+
+body{
+line-height:1.6;
+color:#1a1a1a;
+}
+
+/* HEADER */
+header{
+background:#0b1f3a;
+color:white;
+padding:20px 10%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:relative;
+}
+
+/* NAV (DESKTOP) */
+nav{
+display:flex;
+}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-weight:500;
+}
+
+/* HAMBURGER */
+.menu-toggle{
+display:none;
+font-size:28px;
+cursor:pointer;
+}
+
+/* HERO SECTION */
+.hero{
+display:grid;
+grid-template-columns:1fr 1fr;
+align-items:center;
+padding:80px 10%;
+background:linear-gradient(to right,#0b1f3a,#1d4ed8);
+color:white;
+gap:40px;
+}
+
+/* IMAGE CONTAINER */
+.hero-image{
+width:100%;
+height:100%;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+/* IMAGE FIT FIX */
+.hero-image img{
+width:100%;
+height:auto;
+max-width:100%;
+display:block;
+border-radius:10px;
+object-fit:cover;
+}
+
+/* TEXT AREA */
+.hero-content{
+width:100%;
+}
+
+.hero h1{
+font-size:42px;
+margin-bottom:20px;
+}
+
+.btn{
+padding:12px 24px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+margin:5px;
+font-weight:600;
+}
+
+.btn-primary{
+background:#2563eb;
+color:white;
+}
+
+.btn-secondary{
+background:white;
+color:#0b1f3a;
+}
+
+section{
+padding:60px 10%;
+}
+
+h2{
+margin-bottom:20px;
+font-size:32px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:#f5f7fa;
+padding:25px;
+border-radius:10px;
+text-align:center;
+}
+
+.card img{
+width:55px;
+margin-bottom:15px;
+}
+
+.feature-image{
+width:100%;
+border-radius:10px;
+margin-top:20px;
+}
+
+.cta{
+background:#1d4ed8;
+color:white;
+text-align:center;
+padding:70px 10%;
+}
+
+footer{
+background:#0b1f3a;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+ul{
+padding-left:20px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+.hero{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+/* show hamburger */
+.menu-toggle{
+display:block;
+}
+
+/* mobile menu */
+nav{
+display:none;
+flex-direction:column;
+background:#0b1f3a;
+position:absolute;
+top:70px;
+right:10%;
+width:200px;
+padding:15px;
+border-radius:8px;
+z-index:999;
+}
+
+nav a{
+margin:10px 0;
+}
+
+nav.active{
+display:flex;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>STEMUZA</h2>
+
+<!-- HAMBURGER -->
+<div class="menu-toggle" onclick="toggleMenu()">
+☰
+</div>
+
+<nav id="navMenu">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="solutions.html">Solutions</a>
+<a href="schools.html">Schools</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<script>
+function toggleMenu(){
+document.getElementById("navMenu").classList.toggle("active");
+}
+</script>
+
+<!-- HERO -->
+<section class="hero">
+
+    <!-- IMAGE -->
+    <div class="hero-image">
+        <img src="assets/img/solutions-stemuza.png" alt="STEMUZA STEM solutions robotics IoT AI classroom">
+    </div>
+
+    <!-- CONTENT -->
+    <div class="hero-content">
+        <h1>STEMUZA Solutions</h1>
+
+        <p>
+            End-to-End STEM Learning Systems for Modern Schools
+        </p>
+
+        <p>
+            We provide complete, ready-to-implement STEM solutions that include hardware,
+            software, curriculum content, teacher training, and continuous support. Our goal is
+            to make STEM education simple, practical, and scalable for any school.
+        </p>
+
+        <button class="btn btn-primary">Request a Demo</button>
+        <button class="btn btn-secondary">Download Brochure</button>
+    </div>
+
+</section>
+
+<!-- CORE SOLUTIONS -->
+<section>
+
+<h2>Our Core Solutions</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://cdn-icons-png.flaticon.com/512/1998/1998614.png">
+<h3>STEM Learning Kits</h3>
+<p>
+Hands-on robotics, electronics, and engineering kits designed for CBC,
+British, and Cambridge STEM learning pathways.
+</p>
+</div>
+
+<div class="card">
+<img src="https://cdn-icons-png.flaticon.com/512/1006/1006363.png">
+<h3>IoT School Systems</h3>
+<p>
+Smart sensors for agriculture, environment monitoring, and smart campus
+projects using real-world data collection.
+</p>
+</div>
+
+<div class="card">
+<img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png">
+<h3>AI & Coding Labs</h3>
+<p>
+Structured coding and AI learning modules that help students build logic,
+automation systems, and intelligent applications.
+</p>
+</div>
+
+<div class="card">
+<img src="https://cdn-icons-png.flaticon.com/512/201/201818.png">
+<h3>Virtual STEM Labs</h3>
+<p>
+Interactive simulations that allow learners to experiment safely before
+working on physical systems.
+</p>
+</div>
+
+<div class="card">
+<img src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png">
+<h3>Teacher Training</h3>
+<p>
+Hands-on workshops, guides, and certification programs to help teachers
+deliver STEM confidently.
+</p>
+</div>
+
+<div class="card">
+<img src="https://cdn-icons-png.flaticon.com/512/2910/2910791.png">
+<h3>Innovation Projects</h3>
+<p>
+Real-world project-based learning challenges that turn students into creators,
+innovators, and problem-solvers.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- HOW IT WORKS -->
+<section>
+
+<h2>How Our Solution Works</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>1. Setup</h3>
+<p>
+We equip your school with STEM kits, sensors, and learning materials.
+</p>
+</div>
+
+<div class="card">
+<h3>2. Train</h3>
+<p>
+Teachers receive practical training and ready-to-use teaching guides.
+</p>
+</div>
+
+<div class="card">
+<h3>3. Teach</h3>
+<p>
+Students engage in hands-on projects, coding, and innovation labs.
+</p>
+</div>
+
+<div class="card">
+<h3>4. Innovate</h3>
+<p>
+Learners build real-world solutions and showcase projects.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- IMPACT -->
+<section>
+
+<h2>Impact in Schools</h2>
+
+<ul>
+<li>✔ Improved learner engagement through hands-on learning</li>
+<li>✔ Stronger performance in science and technology subjects</li>
+<li>✔ Increased student creativity and problem-solving skills</li>
+<li>✔ Schools positioned as innovation and STEM hubs</li>
+<li>✔ Better preparation for global careers and university pathways</li>
+</ul>
+
+</section>
+
+<!-- CTA -->
+<section class="cta">
+
+<h2>Bring STEMUZA to Your School</h2>
+
+<p>
+Transform your school into a modern innovation hub with complete STEM solutions.
+</p>
+
+<button class="btn btn-primary">Book a Demo</button>
+
+</section>
+
+<footer>
+<p>© 2026 STEMUZA | Smart STEM Learning Solution</p>
+</footer>
+
+</body>
+</html>
